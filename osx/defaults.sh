@@ -1,6 +1,8 @@
+#!/usr/bin/env bash
+BASEDIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 COMPUTER_NAME="Leonardo"
-echo "› configuring OS X: system defaults"
 
+echo "› configuring OS X: system defaults"
 # Set computer name (as done via System Preferences → Sharing)
 sudo scutil --set ComputerName "$COMPUTER_NAME"
 sudo scutil --set HostName "$COMPUTER_NAME"
@@ -54,3 +56,6 @@ defaults write com.apple.desktopservices DSDontWriteNetworkStores -bool true
 
 # Use AirDrop over every interface.
 defaults write com.apple.NetworkBrowser BrowseAllInterfaces -bool true
+
+# Set a cool desktop wallpaper
+osascript -e "tell application \"Finder\" to set desktop picture to POSIX file \"$BASEDIR/wallpaper.jpg\""
