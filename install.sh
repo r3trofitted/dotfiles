@@ -17,6 +17,10 @@ cd "$DOTFILES_DIR/osx"
 . "./safari.sh"
 . "./terminal.sh"
 
+# Git
+cd "$DOTFILES_DIR/git"
+. "./install.sh"
+
 # TextMate
 # [TODO]
 
