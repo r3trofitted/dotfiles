@@ -24,7 +24,8 @@ cd "$DOTFILES_DIR/osx"
 # [TODO]
 
 # ZSH
-# [TODO]
+cd "$DOTFILES_DIR/zsh"
+. "./install.sh"
 
 # SSH
 # [TODO]
