@@ -23,8 +23,9 @@ defaults write com.apple.SoftwareUpdate ScheduleFrequency -int 1
 # (e.g. enable Tab in modal dialogs)
 defaults write NSGlobalDomain AppleKeyboardUIMode -int 3
 
-# Set a blazingly fast keyboard repeat rate
-defaults write NSGlobalDomain KeyRepeat -int 0
+# Set a fast keyboard repeat rate and short repeat delay
+defaults write NSGlobalDomain InitialKeyRepeat -int 15
+defaults write NSGlobalDomain KeyRepeat -int 1
 
 # Require password 5 seconds after sleep or screen saver begins
 defaults write com.apple.screensaver askForPassword -int 1
@@ -41,12 +42,6 @@ defaults write com.apple.screencapture disable-shadow -bool true
 
 # Enable subpixel font rendering on non-Apple LCDs
 defaults write NSGlobalDomain AppleFontSmoothing -int 2
-
-# Finder: show hidden files by default
-defaults write com.apple.finder AppleShowAllFiles -bool true
-
-# Finder: show all filename extensions
-defaults write NSGlobalDomain AppleShowAllExtensions -bool true
 
 # Finder: show status bar
 defaults write com.apple.finder ShowStatusBar -bool true
