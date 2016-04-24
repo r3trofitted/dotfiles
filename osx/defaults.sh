@@ -27,7 +27,7 @@ defaults write NSGlobalDomain AppleKeyboardUIMode -int 3
 
 # Set a fast keyboard repeat rate and short repeat delay
 defaults write NSGlobalDomain InitialKeyRepeat -int 15
-defaults write NSGlobalDomain KeyRepeat -int 1
+defaults write NSGlobalDomain KeyRepeat -int 3
 
 # Require password 5 seconds after sleep or screen saver begins
 defaults write com.apple.screensaver askForPassword -int 1
