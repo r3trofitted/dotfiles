@@ -10,8 +10,8 @@ cd "$DOTFILES_DIR/homebrew"
 . "./install.sh"
 . "./brewing.sh"
 
-# OS X
-cd "$DOTFILES_DIR/osx"
+# MacOS
+cd "$DOTFILES_DIR/macos"
 . "./defaults.sh"
 . "./dock.sh"
 . "./safari.sh"
@@ -24,7 +24,7 @@ cd "$DOTFILES_DIR/git"
 # TextMate
 # [TODO]
 
-# Hyper (Kabariner + Seil)
+# Hyper (Kabariner Elements)
 # [TODO]
 
 # ZSH

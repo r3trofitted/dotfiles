@@ -8,4 +8,3 @@ defaults write com.apple.terminal StringEncodings -array 4
 open ./Xupar.terminal # TODO: find a headless way to install the theme instead
 defaults write com.apple.terminal "Default Window Settings" -string "Xupar"
 defaults write com.apple.terminal "Startup Window Settings" -string "Xupar"
-

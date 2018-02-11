@@ -1,42 +1,69 @@
 cask_args appdir: "/Applications"
 
+tap "homebrew/core"
+tap "homebrew/versions"
+tap "homebrew/bundle"
+tap "homebrew/services"
 tap "caskroom/fonts"
+tap "caskroom/versions"
+tap "caskroom/cask"
 
+brew "ansible"
 brew "awscli"
-brew "git-lfs"
+brew "git"
 brew "imagemagick"
 brew "packer"
 brew "phantomjs"
 brew "postgresql"
-brew "python3"
+brew "postgresql@9.6", restart_service: true
 brew "rbenv"
 brew "rbenv-default-gems"
-brew "redis"
+brew "redis", restart_service: true
 brew "ruby-build"
+brew "terraform"
 brew "the_silver_searcher"
+brew "vault"
+brew "wget", args: ["with-debug"]
 
-cask "1password"
-cask "dropbox"
+cask "dash"
 cask "firefox"
 cask "google-chrome"
-cask "handbrake"
-cask "hipchat"
-cask "karabiner"
+cask "kaleidoscope"
+cask "karabiner-elements"
 cask "keepingyouawake"
+cask "paw"
 cask "qlcolorcode"
 cask "qlimagesize"
 cask "qlmarkdown"
 cask "qlstephen"
 cask "quicklook-json"
-cask "seil"
 cask "slack"
+cask "spotify"
 cask "textmate"
 cask "tower"
-cask "things"
 cask "transmission"
 cask "vagrant"
 cask "virtualbox"
+cask "zeplin"
 
-cask "font-source-code-pro"
-cask "font-andale-mono"
-# cask "font-monofur"
+cask "caskroom/fonts/font-andale-mono"
+cask "caskroom/fonts/font-anka-coder"
+cask "caskroom/fonts/font-monofur"
+cask "caskroom/fonts/font-source-code-pro"
+
+mas "1Blocker", id: 1107421413
+mas "1Password", id: 443987910
+mas "Acorn", id: 634108295
+mas "DaisyDisk", id: 411643860
+mas "Day One", id: 1055511498
+mas "GarageBand", id: 682658836
+mas "Keynote", id: 409183694
+mas "Kindle", id: 405399194
+mas "Marked 2", id: 890031187
+mas "Moom", id: 419330170
+mas "Numbers", id: 409203825
+mas "Pages", id: 409201541
+mas "Things3", id: 904280696
+mas "Transmit", id: 403388562
+mas "Twitter", id: 409789998
+mas "Xcode", id: 497799835

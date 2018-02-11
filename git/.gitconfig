@@ -3,6 +3,7 @@
 [core]
 	excludesfile = ~/.gitignore_global
 	whitespace = fix,-indent-with-non-tab,trailing-space,cr-at-eol
+	precomposeunicode = true
 [credential]
 	helper = osxkeychain
 [push]
@@ -40,3 +41,11 @@
 	up = "!git fetch upstream && git rebase upstream/master"
 	td = merge --no-ff
 	l  = log --pretty='format:%C(yellow)%h %C(blue)%ad %C(reset)%s%C(red)%d %C(green)%an%C(reset), %C(cyan)%ar' --date=short
+	oups = "!git add --all && git commit --amend --no-edit"
+	please = push --force-with-lease
+	# cleanup = '!git branch --merged master | grep -v "\* master" | xargs -n 1 git branch -d'
+[rebase]
+	autosquash = true
+[user]
+	name = Ronan Limon Duparcmeur
+	email = ronan@2-45.pm
