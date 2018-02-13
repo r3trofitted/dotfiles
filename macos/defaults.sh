@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 BASEDIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
-COMPUTER_NAME="Leonardo"
+COMPUTER_NAME="Nembo"
 
 echo "› configuring OS X: system defaults"
 # Set computer name (as done via System Preferences → Sharing)
@@ -24,10 +24,6 @@ defaults write com.apple.SoftwareUpdate ScheduleFrequency -int 1
 # Enable full keyboard access for all controls
 # (e.g. enable Tab in modal dialogs)
 defaults write NSGlobalDomain AppleKeyboardUIMode -int 3
-
-# Set a fast keyboard repeat rate and short repeat delay
-defaults write NSGlobalDomain InitialKeyRepeat -int 15
-defaults write NSGlobalDomain KeyRepeat -int 3
 
 # Require password 5 seconds after sleep or screen saver begins
 defaults write com.apple.screensaver askForPassword -int 1

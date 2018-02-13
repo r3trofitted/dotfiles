@@ -6,4 +6,4 @@ b) I'm not so good at shell and MacOS scripting, so they may be buggy, dangerous
 inefficient.
 
 If you haven't done so already, you should definitely pay a visit to the [dotfiles community]
-(http://dotfiles.github.io), where you'll find a lot of (most certainly better) dotfiles.
+(https://dotfiles.github.io), where you'll find a lot of (most certainly better) dotfiles.
